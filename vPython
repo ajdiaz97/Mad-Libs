@@ -1,0 +1,121 @@
+def main():
+    print"This is a game of Mad Libs."
+    print"These Mad Libs were found online"
+    print"This is just to practice programming"
+    print"What Mad Libs book would you like to play"
+    print"Bookish Mad Libs or Piranha Mad Libs"
+    answer = raw_input("For Bookish Mad Libs press '1' and for Piranha Mad Libs press '2' \n")
+    if answer == '1':
+        bookish()
+    if answer == '2':
+        piranha()
+#________________________________________________________________________________________
+#bookish madlib
+def bookish():
+    print "I'm going to ask for types of words. It may seem like most of repeating,"
+    print"but there are multiple of the same type. Please type only one word at a time!!"
+#adjectives
+    adjective1 = raw_input("Give me an adjective! \n")
+    print"5 adjectives left"
+    adjective2 = raw_input("Give me another adjective! \n")
+    print"4 adjectives left"
+    adjective3 = raw_input("Give me another adjective! \n")
+    print"3 adjectives left"
+    adjective4 = raw_input("Give me another adjective! \n")
+    print"2 adjectives left"
+    adjective5 = raw_input("Give me another adjective! \n")
+    print"1 ajective left!!"
+    adjective6 = raw_input("Give me one last adjective! \n")
+#nouns
+    noun1 = raw_input("Give me a noun \n")
+    print"1 noun left!"
+    noun2 = raw_input("Give me one final noun! \n")
+    #plural nouns
+    plural_noun1 = raw_input("Give me a plural noun! \n")
+    print"3 plural nouns left"
+    plural_noun2 = raw_input("Give me another plural noun! \n")
+    print"2 plural nouns left"
+    plural_noun3 = raw_input("Give me another plural noun! \n")
+    print"1 plural nouns left!"
+    plural_noun4 = raw_input("Give me one last plural noun! \n")
+#parts of the body
+    part_of_body = raw_input("Give me a part of the body! \n")
+    print"1 part of the body left!"
+    part_of_body2 = raw_input("Give me one last part of the body! \n")
+#extras
+    female_person = raw_input("Give me a person in the room, who is female! \n")
+    clothing = raw_input("Give me an article of clothing! \n")
+    city = raw_input("Give me a city! \n")
+    celebrity = raw_input("Give me your favorite celebrity! \n")
+    place = raw_input("Give me a place! \n")
+    verb = raw_input("Give me a verb! \n")
+    number = raw_input("Give me a number! \n")
+ #story
+    print"You're done!!! Here's the story!!"
+    print"----------------------------------------------------------------------------"
+    print"There are many",adjective1,"ways to choose a/an",noun1,"to read."
+    print"First, you could ask for recommendations from your friends and",plural_noun1
+    print"Just don't ask Aunt",female_person,"- she only reads",adjective2,
+    print"books with",clothing,"-ripping goddesses on the cover.If your friends"
+    print"and family are no help,try checking out the", noun1,"review in The", city,"Times."
+    print"If the",plural_noun2,"featured there are too",adjective3,"for your taste"
+    print",try something a little more low-",part_of_body,",like The",celebrity
+    print"Magazine, or",plural_noun3,"Magazine. You could also choose a book"
+    print"the",adjective4,"-old fashioned way. Head to your local library or",place
+    print"and browse the shelves until something catches your",part_of_body2,"."
+    print"Or, you could save yourself a whole lot of",adjective5,"trouble and log on"
+    print"to www.bookish.com, the",adjective6," new website to", verb," for books!"
+    print"With all the time you'll save not having to search for",plural_noun4
+    print"you can read",number,"more books!"
+#end of story 
+    print"-------------------------------------------------------------------------------"
+    print"Thanks for playing! Would you like to go to the main menu?" 
+    menu = raw_input("Would you like to go to the main menu? 'yes' for yes, and 'no' for no \n")
+    if menu == 'yes':
+        main()
+    if menu =='no':
+        print"Thanks for playing!!"
+#piranha madlib
+def piranha():
+    print"The fill in words are sectionalized. Only put in one word in at a time!!"
+#adverb
+    adv1 = raw_input("Give me an adverb! \n")
+    adv2 = raw_input("Give me one more adverb! \n")
+#adjectives
+    adj1 = raw_input("Give me an adjective! \n")
+    adj2 = raw_input("Give me one more adjective! \n")
+#verb
+    verb1 = raw_input("Give me a verb! \n") 
+    verb2 = raw_input("Give me one more verb! \n")
+    verb_ing1 = raw_input("Give me a verb ending in -ing! \n")
+    verb_ing2 = raw_input("Give me one more verb ending in -ing! \n")
+#random others
+    fc = raw_input("Give me a foreign country! \n")
+    anim = raw_input("Give me any animal! \n")
+    pla = raw_input("Give me a place! \n")
+    liq = raw_input("Give me a type of liquid! \n")
+    pob = raw_input("Give me a part of the body! \n")
+    print"You're done!!! Here's the story!!"
+    print"----------------------------------------------------------------------------"
+    print"If you are traveling in",fc,"and find yourself having to cross a piranha"
+    print"filled river, here's how to do it",adv1,": Piranhas are more",adj1,"during"
+    print"the day so cross the river at night. Avoid areas with netted",anim,"traps"
+    print"piranhas may be",verb_ing1,"there looking to",verb1,"them!"
+    print"When",verb_ing2,"the river, swim",adv2,". You don't want to wake them up and"
+    print"make them",adj2,"! Whatever you do, if you have an open wound, try to find"
+    print"another way to get back to the",pla,". Piranhas are attracted to fresh",liq
+    print"and will most likely take a bite out of your",pob,"if you",verb2,"in the water!"
+    print"------------------------------------------------------------------------------"
+    menu = raw_input("Would you like to go to the main menu? 'yes' for yes, and 'no' for no \n")
+    if menu == 'yes':
+        main()
+    if menu =='no':
+        print"Thanks for playing!"
+#references of the Mad Libs used
+#   "I got Bookish Mad Libs from https://www.pinterest.com/pin/227220743673516421/"
+#  "I got Piranha Mad Libs from https://www.rainbowresource.com/proddtl.php?id=032883"
+main()
+
+
+    
+    
